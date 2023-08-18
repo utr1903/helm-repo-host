@@ -41,8 +41,8 @@ helm repo add myapps https://utr1903.github.io/helm-repo-host/charts
 helm repo update myapps
 ```
 
-Install the locally added repo
+Install the locally added repo (with `--version` for a specific version)
 
 ```bash
-helm upgrade myapp --install myapps/myapp
+helm upgrade myapp --install myapps/myapp --version 0.1.1
 ```
