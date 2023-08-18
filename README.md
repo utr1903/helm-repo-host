@@ -31,3 +31,18 @@ helm package ./helm/myapp -d ./charts
 ```bash
 helm repo index ./charts
 ```
+
+## Installing
+
+Add helm repo locally.
+
+```bash
+helm repo add myapps https://utr1903.github.io/helm-repo-host/charts
+helm repo update myapps
+```
+
+Install the locally added repo
+
+```bash
+helm upgrade myapp --install myapps/myapp
+```
