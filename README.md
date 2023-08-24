@@ -43,6 +43,7 @@ helm repo update myapps
 
 Install the locally added repo (with `--version` for a specific version)
 
+
 ```bash
 helm upgrade myapp --install myapps/myapp --version 0.1.1
 ```
